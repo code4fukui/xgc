@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<script type="module">
+import { h1, style, add, create, css } from "https://js.sabae.cc/stdom.js";
+
+onload = async () => {
+  h1("G-スポーツ");
+  const div = add("div");
+  div.textContent = "海岸トレジャーハンティング"
+  const ul = add("ul");
+
+  css();
+  style({
+    body: {
+      "text-align": "center",
+      "font-size": "5vw",
+    },
+    ul: {
+      "list-style": "none",
+    },
+    li: {
+      "padding": "5px",
+      "margin": "5vw",
+      "border": "3px solid green",
+      "border-radius": "10px",
+    }
+  });
+  const list = {
+    "ランキングを見る": {
+      "地域別": [
+        "水晶浜海水浴場",
+        "武波海水浴場",
+      ],
+      "年代別": [
+        "若手部門",
+        "40代部門",
+        "50代部門",
+        "シニア部門",
+      ],
+      "種類別": [
+        "ペットボトルキャップ",
+        "ペットボトル",
+        "木材部門",
+        "漁具部門",
+      ]
+    },
+    "プレイする": [
+      "ペットボトルキャップ",
+      "ペットボトル",
+      "木材部門",
+      "漁具部門",
+    ],
+  };
+
+  const waitForClick = async (parent) => {
+    return new Promise(resolve => {
+      parent.childNodes.forEach(c => {
+        c.onclick = () => resolve(c.data);
+      });
+    })
+  };
+  
+  let current = list;
+  for (;;) {
+    ul.innerHTML = "";
+    const li = (txt, data) => {
+      const c = create("li");
+      c.textContent = txt;
+      ul.appendChild(c);
+      c.data = data;
+      return c;
+    }
+    console.log(current);
+    if (Array.isArray(current)) {
+      for (const c of current) {
+        li(c, null);
+      }
+    } else {
+      for (const c in current) {
+        li(c, current[c]);
+      }
+    }
+    let bkcurrent = current;
+    current = await waitForClick(ul);
+    if (!current) {
+      alert("under developping!")
+      current = bkcurrent;
+    }
+  }
+  
+};
+</script>
