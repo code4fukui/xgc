@@ -1,4 +1,4 @@
-# xGC どこでもガベージコレクション
+# xGC garbage collection anywhere
 
 リークした、ごみ問題の整理と、その解決策を探るプロジェクト
 
