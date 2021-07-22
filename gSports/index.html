@@ -53,7 +53,14 @@ onload = async () => {
       "木材部門",
       "漁具部門",
     ],
+    "オープンデータを見る": [
+      "海岸ごみ量の推移（種別）",
+      "国別漂着物",
+      "過去のお宝ゴミ",
+    ],
   };
+
+  const stack = [];
 
   const waitForClick = async (parent) => {
     return new Promise(resolve => {
@@ -62,8 +69,21 @@ onload = async () => {
       });
     })
   };
+  const waitForClickOrBack = async (parent) => {
+    return new Promise(resolve => {
+      parent.childNodes.forEach(c => {
+        c.onclick = () => resolve(c.data);
+      });
+      window.onhashchange = (e) => {
+        console.log(e);
+        const b = stack.pop();
+        resolve(b);
+      };
+    })
+  };
   
   let current = list;
+
   for (;;) {
     ul.innerHTML = "";
     const li = (txt, data) => {
@@ -84,8 +104,13 @@ onload = async () => {
       }
     }
     let bkcurrent = current;
+    //current = await waitForClickOrBack(ul);
     current = await waitForClick(ul);
-    if (!current) {
+    if (current) {
+      stack.push(bkcurrent);
+      console.log(current);
+      document.location.hash = current;
+    } else if (!current) {
       alert("under developping!")
       current = bkcurrent;
     }
