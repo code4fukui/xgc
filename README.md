@@ -22,6 +22,11 @@
 - [海洋ごみに関するニュース](https://github.com/code4fukui/marinedebris/issues/2)
 - [ごみ問題対策アイデア](https://github.com/code4fukui/marinedebris/issues/3)
 
+## プロトタイピング
+
+- [G-スポーツ推進協議会](https://xgc.jp/gSports/)
+- [スマホゲーム Treasure Hunting](https://xgc.jp/t-hunt/)
+
 ## 参考リンク
 
 - [プラスチック循環利用協会講演会（2014年9月2日講演） プラスチックによる海洋環境汚染 - プラスチック情報局：協会の活動](https://www.pwmi.or.jp/public/new/201501/index.html)
