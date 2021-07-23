@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>t-hunt</title>
+<script type="module">
+import {
+  ticks, difficulty, score, addScore, end, complete, onLoad,
+  rnd, rndi, rnds, vec,
+  color, box, rect, bar, line, arc, text, char, play, input, particle,
+  PI, abs, sin, cos, atan2, pow, sqrt, floor, round, ceil, clamp, wrap, range, times, remove, addWithCharCode,
+} from "https://taisukef.github.io/crisp-game-lib/es/main.js";
+
+window.title = "Tresure Hunting";
+
+window.description = `
+[Tap/Drag] Pick
+`;
+
+window.options = {
+  //theme: "crt",
+  isPlayingBgm: true,
+  isReplayEnabled: true,
+  isShowingTime: true,
+  //isShowingScore: true,
+  seed: 2,
+};
+
+let garbage = null;
+let stage = 0;
+let nwait = 1;
+let cnt = 0;
+const makeStage = () => {
+  garbage = [];
+  cnt = 0;
+  const n = stage;
+  for (let i = 0; i < n; i++) {
+    const x = rnd(80) + 10;
+    const y = rnd(80) + 10;
+    garbage.push({ pos: { x, y }});
+  }
+};
+
+window.update = () => {
+  if (nwait) {
+    nwait--;
+    if (nwait) {
+      return;
+    }
+    stage++;
+    if (stage == 11) {
+      complete();
+      play("hit");
+      return;
+    }
+    makeStage();
+  }
+  if (!ticks) {
+    stage = 0;
+    nwait = 1;
+    return;
+  }
+  color("red");
+  garbage.forEach((g) => char("&", g.pos));
+  if (input.isPressed) {
+    remove(garbage, (g) => {
+      const dx = input.pos.x - g.pos.x;
+      const dy = input.pos.y - g.pos.y;
+      const flg = dx * dx + dy * dy < 8 * 8;
+      if (flg) {
+        addScore(++cnt, input.pos);
+        play("coin");
+      }
+      return flg;
+    });
+  }
+  if (garbage.length == 0) {
+    nwait = 30;
+  }
+};
+
+window.addEventListener("load", onLoad);
+</script>
+</head>
+</html>
