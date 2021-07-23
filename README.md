@@ -26,6 +26,7 @@
 
 - [G-スポーツ推進協議会](https://xgc.jp/gSports/) by [美しい浜アイデアソン](https://cheerup-mihama.jp/mission/m002/)
 - [スマホゲーム Treasure Hunting](https://xgc.jp/t-hunt/) by [美しい浜アイデアソン](https://cheerup-mihama.jp/mission/m002/)
+
 https://user-images.githubusercontent.com/1715217/126731489-bcf11b7e-3b9a-40c2-acdd-bfb9b1e83ce5.mp4
 
 ## オープンデータ
