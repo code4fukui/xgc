@@ -24,11 +24,12 @@
 
 ## プロトタイピング
 
-- [G-スポーツ推進協議会](https://xgc.jp/gSports/)
-- [スマホゲーム Treasure Hunting](https://xgc.jp/t-hunt/)
+- [G-スポーツ推進協議会](https://xgc.jp/gSports/) by [美しい浜アイデアソン](https://cheerup-mihama.jp/mission/m002/)
+- [スマホゲーム Treasure Hunting](https://xgc.jp/t-hunt/) by [美しい浜アイデアソン](https://cheerup-mihama.jp/mission/m002/)
 
 ## 参考リンク
 
+- [美しい浜アイデアソン](https://cheerup-mihama.jp/mission/m002/)
 - [プラスチック循環利用協会講演会（2014年9月2日講演） プラスチックによる海洋環境汚染 - プラスチック情報局：協会の活動](https://www.pwmi.or.jp/public/new/201501/index.html)
 - [漂流・漂着ごみ - Wikipedia](https://ja.wikipedia.org/wiki/%E6%BC%82%E6%B5%81%E3%83%BB%E6%BC%82%E7%9D%80%E3%81%94%E3%81%BF#:~:text=%E6%BC%82%E6%B5%81%E3%83%BB%E6%BC%82%E7%9D%80%E3%81%94%E3%81%BF%EF%BC%88%E3%81%B2%E3%82%87%E3%81%86,%E3%81%94%E3%81%BF%E3%80%81%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%87%E3%83%96%E3%83%AA%E3%81%A8%E3%82%82%E5%91%BC%E3%81%B0%E3%82%8C%E3%82%8B%E3%80%82)
 - [xGC オシャレに街をクリーンナップ](https://ameblo.jp/xgc/)
