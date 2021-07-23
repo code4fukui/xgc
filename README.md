@@ -27,6 +27,10 @@
 - [G-スポーツ推進協議会](https://xgc.jp/gSports/) by [美しい浜アイデアソン](https://cheerup-mihama.jp/mission/m002/)
 - [スマホゲーム Treasure Hunting](https://xgc.jp/t-hunt/) by [美しい浜アイデアソン](https://cheerup-mihama.jp/mission/m002/)
 
+## オープンデータ
+
+- [美浜の海、360度写真オープンデータ 2021-07-22](https://code4fukui.github.io/vr-fukui/vr-view.html#img/vr-mihama.jpg)
+
 ## 参考リンク
 
 - [美しい浜アイデアソン](https://cheerup-mihama.jp/mission/m002/)
