@@ -29,7 +29,7 @@
 
 ## オープンデータ
 
-- [美浜の海、360度写真オープンデータ 2021-07-22](https://code4fukui.github.io/vr-fukui/vr-view.html#img/vr-mihama.jpg)
+- [美浜の海、360度写真オープンデータ 2021-07-22](https://code4fukui.github.io/vr-fukui/vr-view.html#img/vr-mihama.jpg) （美浜町ランドアバウトも写ってます）
 
 ## 参考リンク
 
