@@ -1,5 +1,7 @@
 # xGC - garbage collection anywhere
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 - 不法投棄ごみ問題の整理と、その解決策を探るプロジェクト
 - xGC = どこでも(x) + コンピューター用語の[GC](https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%99%E3%83%BC%E3%82%B8%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3)より
 
